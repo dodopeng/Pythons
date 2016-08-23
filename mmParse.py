@@ -12,7 +12,8 @@ def url_open(url):
    opener = urllib.request.build_opener(proxy_support)
    opener.addheaders = [('User-Agent','Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')]
    urllib.request.install_opener(opener)
-    
+
+   #头文件 
    head={}
    head['User-Agent']='Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 
@@ -48,8 +49,7 @@ def find_imgs(url):
         
     #for each in img_addrs:
     #    print(each)
-
-    return img_addrs
+    #return img_addrs
 
 
 def save_imgs(folder,img_addrs):
